@@ -333,6 +333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Triple_Shot_Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 1725507885331127538, guid: 5167ee2af5c70af418dba72887c66d45, type: 3}
+      propertyPath: powerupID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1725507885331127542, guid: 5167ee2af5c70af418dba72887c66d45, type: 3}
       propertyPath: m_RootOrder
       value: 6

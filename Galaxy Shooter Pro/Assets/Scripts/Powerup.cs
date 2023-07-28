@@ -31,17 +31,22 @@ public class Powerup : MonoBehaviour
             Player player = other.transform.GetComponent<Player>();
             if (player!= null)
             {
-                if (powerupID == 0)
+                switch (powerupID)
                 {
-                    player.TripleShotActive();
-                }
-                else if (powerupID == 1)
-                {
-                    Debug.LogWarning("Collected Speed Boost");
-                }
-                else if (powerupID == 2)
-                {
-                    Debug.LogWarning("Shield Collected");
+                    case 0:
+                        player.TripleShotActive();
+                        Debug.Log("TripleShot Active");
+                        break;
+                    case 1:
+                        player.SpeedBoostActive();
+                        Debug.Log("SpeedBoost Active");
+                        break;
+                    case 2:
+                        Debug.Log("Colledted Shields");
+                        break;
+                    default:
+                        Debug.Log("Default Values");
+                        break;
                 }
                 
             }
