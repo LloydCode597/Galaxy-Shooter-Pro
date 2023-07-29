@@ -686,7 +686,7 @@ MonoBehaviour:
   powerups:
   - {fileID: 1725507885331127537, guid: 5167ee2af5c70af418dba72887c66d45, type: 3}
   - {fileID: 5485160779902312312, guid: 063fd91258fc408439d770acf8ec1cc0, type: 3}
-  - {fileID: 0}
+  - {fileID: 6641683442591037771, guid: 7158ac483e92c004abc2910252a74693, type: 3}
 --- !u!4 &2031053364
 Transform:
   m_ObjectHideFlags: 0
