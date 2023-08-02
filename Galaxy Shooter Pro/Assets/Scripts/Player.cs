@@ -128,6 +128,8 @@ public class Player : MonoBehaviour
 
         // Subtract a live by one
         __lives--;
+
+        _uiManager.UpdateLives(__lives);
         
         if (__lives < 1)
         {
