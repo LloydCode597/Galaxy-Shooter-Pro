@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GalaxyShooter_Game.unity
+    path: Assets/Scenes/Main_Menu.unity
+    guid: ebd8082646113f240a202c37608b0661
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
     guid: 3f875b648a0a415408e7191d645167bc
   m_configObjects: {}

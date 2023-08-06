@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         // restart the current scene
         if (Input.GetKeyDown(KeyCode.R) && _isGameOver == true)
         {
-            SceneManager.LoadScene("GalaxyShooter_Game"); // Current Game scene
+            SceneManager.LoadScene(1); // Current Game scene
         }
     }
 
