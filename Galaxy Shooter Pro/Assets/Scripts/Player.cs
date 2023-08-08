@@ -25,6 +25,9 @@ public class Player : MonoBehaviour
     private GameObject _shieldVisualizer;
 
     [SerializeField]
+    private GameObject _leftEngine, _rightEngine;
+
+    [SerializeField]
     private int _score;
 
     private UIManager _uiManager;
@@ -128,6 +131,15 @@ public class Player : MonoBehaviour
 
         // Subtract a live by one
         __lives--;
+
+        if (__lives == 2)
+        {
+            _leftEngine.SetActive(true);
+        }
+        else if (__lives == 1)
+        {
+            _rightEngine.SetActive(true);
+        }
 
         _uiManager.UpdateLives(__lives);
         
