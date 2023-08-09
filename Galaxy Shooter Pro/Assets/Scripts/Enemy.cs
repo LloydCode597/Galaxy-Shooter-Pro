@@ -9,11 +9,13 @@ public class Enemy : MonoBehaviour
 
     private Player _player;
     private Animator _animator;
+    private AudioSource _audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         _player = GameObject.Find("Player").GetComponent<Player>();
+        _audioSource = GetComponent<AudioSource>();
 
         if (_player == null)
         {
@@ -54,7 +56,9 @@ public class Enemy : MonoBehaviour
             }
             _animator.SetTrigger("OnEnemyDeath");
             _speed = 0;
+            _audioSource.Play();
             Destroy(this.gameObject, 2.8f);
+            _audioSource.Play();
         }
 
         // Laser Collision
@@ -69,7 +73,7 @@ public class Enemy : MonoBehaviour
 
             _animator.SetTrigger("OnEnemyDeath");
             _speed = 0;
-
+            _audioSource.Play();
             Destroy(GetComponent<Collider2D>());
             Destroy(this.gameObject, 2.8f);
         }
